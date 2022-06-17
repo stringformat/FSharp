@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XZCzYLUzVcdPedb6JFDSPx4cC8OITzpge95Q5pCDWQwwXGRdxHkkGOepFYFlJs2L8iNUu6AWGnX5ASNGXho4iQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Api\\FSharp.Api.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexi\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

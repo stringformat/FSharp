@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "o+vk2iwBjWnl7VDAJzjePBpNjlu8LJbneztWJXnkR3M=",
+  "Source": "FSharp.Api",
+  "BasePath": "_content/FSharp.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
