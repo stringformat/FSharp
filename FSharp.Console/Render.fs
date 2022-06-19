@@ -26,7 +26,17 @@ let renderShowCatalog (products:Product list) =
              match product.Description with
              | Some(String50 s) -> s
              | None -> "Pas de description"
-         printfn $"%s{Id1To99.toString product.Id} -- %s{String10.value product.Name} -- %s{description}"
+             
+         let price =
+             match product.Price with
+             | Free -> "gratuit"
+             | StandardPrice standardPrice -> Amount.toString standardPrice
+             | PromotedPrice promotedPrice ->
+                 match promotedPrice with
+                 | Promoted promoted -> Amount.toString promoted
+                 | PercentageOff(price, percentageOff) -> $"%s{Amount.toString price} euros (avec %s{Percentage.toString percentageOff} de réduction)"
+         
+         printfn $"%s{Id1To99.toString product.Id} -- %s{String10.value product.Name} -- %s{description} -- %s{price}"
          
     printfn "----------------------------------------------------"
     printfn ""
@@ -56,7 +66,7 @@ let renderAddProductToBasket products basket =
          | Some quantity -> quantity 
          | None -> failwith "Quantité incorrect"
          
-     ManageBasket.addProduct product quantity basket
+     ManageBasket.addProductToBasket product quantity basket
  
 let renderShowBasket (basket:Basket) =
     printfn ""

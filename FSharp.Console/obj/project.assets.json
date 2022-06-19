@@ -59,17 +59,17 @@
           }
         }
       },
-      "FSharp.Business/1.0.0": {
+      "FSharp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "FSharp.Core": "6.0.2"
         },
         "compile": {
-          "bin/placeholder/FSharp.Business.dll": {}
+          "bin/placeholder/FSharp.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FSharp.Business.dll": {}
+          "bin/placeholder/FSharp.Domain.dll": {}
         }
       }
     }
@@ -119,16 +119,16 @@
         "lib/netstandard2.1/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
-    "FSharp.Business/1.0.0": {
+    "FSharp.Domain/1.0.0": {
       "type": "project",
-      "path": "../FSharp.Business/FSharp.Business.fsproj",
-      "msbuildProject": "../FSharp.Business/FSharp.Business.fsproj"
+      "path": "../FSharp.Domain/FSharp.Domain.fsproj",
+      "msbuildProject": "../FSharp.Domain/FSharp.Domain.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FSharp.Business >= 1.0.0",
-      "FSharp.Core >= 6.0.2"
+      "FSharp.Core >= 6.0.2",
+      "FSharp.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -137,11 +137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
+      "projectUniqueName": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
       "projectName": "FSharp.Console",
-      "projectPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
+      "projectPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
       "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\obj\\",
+      "outputPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -157,8 +157,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj": {
-              "projectPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj"
+            "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj": {
+              "projectPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj"
             }
           }
         }

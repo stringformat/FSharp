@@ -1,0 +1,10 @@
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\bin\Debug\net6.0\FSharp.Domain.deps.json
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\bin\Debug\net6.0\FSharp.Domain.dll
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\bin\Debug\net6.0\FSharp.Domain.pdb
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\bin\Debug\net6.0\FSharp.Domain.xml
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.fsproj.AssemblyReference.cache
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.AssemblyInfoInputs.cache
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.AssemblyInfo.fs
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.dll
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.xml
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Api\\FSharp.Api.fsproj": {}
+    "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Api\\FSharp.Api.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Api\\FSharp.Api.fsproj": {
+    "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Api\\FSharp.Api.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Api\\FSharp.Api.fsproj",
+        "projectUniqueName": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Api\\FSharp.Api.fsproj",
         "projectName": "FSharp.Api",
-        "projectPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Api\\FSharp.Api.fsproj",
+        "projectPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Api\\FSharp.Api.fsproj",
         "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Api\\obj\\",
+        "outputPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config"

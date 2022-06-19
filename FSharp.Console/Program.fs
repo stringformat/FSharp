@@ -3,8 +3,8 @@ open FSharp.Business.Features
 open FSharp.Console
 
 let mutable _basket = ManageBasket.createEmpty
-let mutable _order = ManageOrder.createEmpty;
-let products = ManageProduct.getProducts
+let mutable _order = ManageOrder.createEmpty
+let _products = ManageProduct.getProducts
 
 let addProductToBasket products basket =
     _basket <- Render.renderAddProductToBasket products basket
@@ -25,4 +25,4 @@ Render.renderMenu
 
 while true do
     let key = Console.ReadKey().Key
-    handleKey key products _basket
+    handleKey key _products _basket

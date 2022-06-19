@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\FSharp.Console.fsproj": {}
+    "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj": {
+    "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj",
-        "projectName": "FSharp.Business",
-        "projectPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj",
+        "projectUniqueName": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
+        "projectName": "FSharp.Console",
+        "projectPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
         "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\obj\\",
+        "outputPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,7 +26,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj": {
+                "projectPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj"
+              }
+            }
           }
         }
       },
@@ -60,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\FSharp.Console.fsproj": {
+    "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
-        "projectName": "FSharp.Console",
-        "projectPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
+        "projectUniqueName": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj",
+        "projectName": "FSharp.Domain",
+        "projectPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\FSharp.Domain.fsproj",
         "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Console\\obj\\",
+        "outputPath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alexi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -82,11 +86,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj": {
-                "projectPath": "C:\\Users\\alexi\\RiderProjects\\FSharp\\FSharp.Business\\FSharp.Business.fsproj"
-              }
-            }
+            "projectReferences": {}
           }
         }
       },

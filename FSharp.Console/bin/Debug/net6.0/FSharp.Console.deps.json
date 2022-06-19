@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "FSharp.Console/1.0.0": {
         "dependencies": {
-          "FSharp.Business": "1.0.0",
-          "FSharp.Core": "6.0.2"
+          "FSharp.Core": "6.0.2",
+          "FSharp.Domain": "1.0.0"
         },
         "runtime": {
           "FSharp.Console.dll": {}
@@ -64,12 +64,12 @@
           }
         }
       },
-      "FSharp.Business/1.0.0": {
+      "FSharp.Domain/1.0.0": {
         "dependencies": {
           "FSharp.Core": "6.0.2"
         },
         "runtime": {
-          "FSharp.Business.dll": {}
+          "FSharp.Domain.dll": {}
         }
       }
     }
@@ -87,7 +87,7 @@
       "path": "fsharp.core/6.0.2",
       "hashPath": "fsharp.core.6.0.2.nupkg.sha512"
     },
-    "FSharp.Business/1.0.0": {
+    "FSharp.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

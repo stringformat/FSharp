@@ -4,7 +4,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Console", "FSharp.Co
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Api", "FSharp.Api\FSharp.Api.fsproj", "{6AF65D3B-C79C-4549-80D1-FD7204B102A3}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Business", "FSharp.Business\FSharp.Business.fsproj", "{712370A4-EB39-41FB-B39C-62D8624F78B5}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Domain", "FSharp.Domain\FSharp.Domain.fsproj", "{712370A4-EB39-41FB-B39C-62D8624F78B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

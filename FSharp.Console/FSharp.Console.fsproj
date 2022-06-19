@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\FSharp.Business\FSharp.Business.fsproj" />
+      <ProjectReference Include="..\FSharp.Domain\FSharp.Domain.fsproj" />
     </ItemGroup>
 
 </Project>
