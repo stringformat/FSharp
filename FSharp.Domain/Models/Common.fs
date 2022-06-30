@@ -1,6 +1,7 @@
 ﻿namespace FSharp.Business.Models.Common
 
 open System.Text.RegularExpressions
+open Microsoft.FSharp.Core
 
 type String10 = String10 of string
 
@@ -76,15 +77,19 @@ module Percentage =
         double ((1 / 100) * p)
         
     let toString (Percentage p) =
-        $"%s{string p}"
+        $"%s{string p}%%"
         
 type Amount = Amount of decimal
 
 module Amount =
-    let create a =
+    let create (a:decimal) =
         if a >= 0 && a <= 100 
             then Some (Amount a)
             else None
+            
+    let value (Amount a) = a
+    
+    let def = Amount 0
         
     let toString (Amount a) =
-        $"%s{string a} euros"
+        $"%s{string a}€"

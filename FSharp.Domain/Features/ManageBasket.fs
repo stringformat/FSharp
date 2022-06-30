@@ -10,11 +10,11 @@
     let addProductToBasket = Basket.addItem
     
     let deleteProduct product (FilledBasket basket) =
-        let items = basket |> List.filter (fun x -> x.Product <> product)
+        let items = basket.Items |> List.filter (fun x -> x.Product <> product)
         Basket.create items
     
     let changeProductQuantity quantity product (FilledBasket basket) =
         let newItem = { Product=product; Quantity=quantity }
-        let items = excludeProduct product basket
+        let items = excludeProduct product basket.Items
         let newItems = items @ [newItem]
         Basket.create newItems

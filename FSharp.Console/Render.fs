@@ -19,7 +19,7 @@ let renderMenu =
 let renderShowCatalog (products:Product list) =
     printfn ""
     printfn "------------------- Catalogue ----------------------"
-    printfn "ID -- Nom -- Description"
+    printfn "ID -- Nom -- Description -- Prix"
     
     for product in products do
          let description =
@@ -33,8 +33,8 @@ let renderShowCatalog (products:Product list) =
              | StandardPrice standardPrice -> Amount.toString standardPrice
              | PromotedPrice promotedPrice ->
                  match promotedPrice with
-                 | Promoted promoted -> Amount.toString promoted
-                 | PercentageOff(price, percentageOff) -> $"%s{Amount.toString price} euros (avec %s{Percentage.toString percentageOff} de réduction)"
+                 | Promoted promoted -> $"PROMO !! %s{Amount.toString promoted}"
+                 | PercentageOff(price, percentageOff) -> $"PROMO !! %s{Amount.toString price} (%s{Percentage.toString percentageOff} de réduction)"
          
          printfn $"%s{Id1To99.toString product.Id} -- %s{String10.value product.Name} -- %s{description} -- %s{price}"
          
@@ -73,14 +73,15 @@ let renderShowBasket (basket:Basket) =
     printfn "-------------------- Panier -----------------------"
     
     match basket with
-        | FilledBasket basketItems ->
-            printfn "ID -- Nom -- Quantité"
-            for item in basketItems do
+        | FilledBasket filledBasket ->
+            printfn "ID -- Nom -- Quantité -- Prix -- Total"
+            for item in filledBasket.Items do
                 printfn $"%s{string item.Product.Id} -- %s{string item.Product.Name} -- %s{string item.Quantity}"
         | EmptyBasket -> printfn "Panier vide."
         
     printfn "----------------------------------------------------"
-    printfn ""
+    printfn "Total panier: {}"
+    printfn "----------------------------------------------------"
     
 let renderValidateBasketAndCreateOrder basket =
     printfn ""

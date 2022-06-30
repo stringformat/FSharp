@@ -28,7 +28,7 @@ type OrderState =
 
 module Order =
     let create (FilledBasket basket) firstName lastName email address =
-        let items = basket |> List.map (fun x -> { Product=x.Product; Quantity=x.Quantity })
+        let items = basket.Items |> List.map (fun x -> { Product=x.Product; Quantity=x.Quantity })
         NewOrder
             {
                 FirstName=firstName

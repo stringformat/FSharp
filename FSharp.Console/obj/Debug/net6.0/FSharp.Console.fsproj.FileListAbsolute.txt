@@ -27,9 +27,6 @@ C:\Users\alexi\RiderProjects\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Conso
 C:\Users\alexi\RiderProjects\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Business.dll
 C:\Users\alexi\RiderProjects\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Business.pdb
 C:\Users\alexi\RiderProjects\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Business.xml
-C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.fsproj.AssemblyReference.cache
-C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.AssemblyInfoInputs.cache
-C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.AssemblyInfo.fs
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Console.exe
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Console.deps.json
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Console.runtimeconfig.json
@@ -49,10 +46,13 @@ C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\ru\FSharp.C
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\tr\FSharp.Core.resources.dll
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\zh-Hans\FSharp.Core.resources.dll
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\zh-Hant\FSharp.Core.resources.dll
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Domain.dll
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Domain.pdb
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Domain.xml
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.fsproj.AssemblyReference.cache
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.AssemblyInfoInputs.cache
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.AssemblyInfo.fs
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.fsproj.CopyComplete
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.dll
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.pdb
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.genruntimeconfig.cache
-C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Domain.dll
-C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Domain.pdb
-C:\Users\alexi\sources\Github\FSharp\FSharp.Console\bin\Debug\net6.0\FSharp.Domain.xml
