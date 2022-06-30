@@ -26,3 +26,12 @@ module Product =
     let createWithPromotion id name description promotion = { Id=id; Name=name; Description=description; Price=PromotedPrice promotion }
     
     let createWithFreePrice id name description = { Id=id; Name=name; Description=description; Price=Free }
+    
+    let getAmount product =
+        match product.Price with
+            | Free -> decimal 0
+            | StandardPrice(Amount amount) -> amount
+            | PromotedPrice promotion ->
+                match promotion with
+                | Promoted(Amount amount) -> amount
+                | PercentageOff(Amount amount, _) -> amount

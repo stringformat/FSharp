@@ -21,19 +21,10 @@ type Basket =
     | EmptyBasket
 
 module Basket =
-    let private getProductAmount product =
-        match product.Price with
-                | Free -> decimal 0
-                | StandardPrice(Amount amount) -> amount
-                | PromotedPrice promotion ->
-                    match promotion with
-                    | Promoted(Amount amount) -> amount
-                    | PercentageOff(Amount amount, _) -> amount
-    
     let private calculateTotalBasket (items:BasketItem list) =
         let rec calculate (index:int) (items:BasketItem list) =
             let total =
-                getProductAmount items[index].Product  
+                Product.getAmount items[index].Product  
             total + calculate (index + 1) items
         Amount.create (calculate 0 items)
     
@@ -48,4 +39,4 @@ module Basket =
             let items = (filledBasket.Items @ [item])
             { Items=items; Total= (calculateTotalBasket items).Value } 
         | EmptyBasket ->
-            { Items=[item]; Total= (Amount.create (getProductAmount item.Product)).Value }
+            { Items=[item]; Total= (Amount.create (Product.getAmount item.Product)).Value }
