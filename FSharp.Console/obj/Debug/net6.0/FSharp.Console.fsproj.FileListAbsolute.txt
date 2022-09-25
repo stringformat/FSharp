@@ -56,3 +56,4 @@ C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Cons
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.dll
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.pdb
 C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.genruntimeconfig.cache
+C:\Users\alexi\sources\Github\FSharp\FSharp.Console\obj\Debug\net6.0\FSharp.Console.fsproj.CoreCompileInputs.cache

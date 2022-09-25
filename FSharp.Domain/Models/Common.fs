@@ -31,7 +31,11 @@ module Quantity1To99 =
         then Some (Quantity1To99 i)
         else None
         
-    let value (Quantity1To99 q) = q 
+    let value (Quantity1To99 q) = q
+    
+    let toString (Quantity1To99 q) = string q
+    
+    let toDecimal (Quantity1To99 q) = decimal q 
         
 type Id1To99 = Id1To99 of int
 

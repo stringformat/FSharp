@@ -9,12 +9,18 @@
     
     let addProductToBasket = Basket.addItem
     
-    let deleteProduct product (FilledBasket basket) =
-        let items = basket.Items |> List.filter (fun x -> x.Product <> product)
-        Basket.create items
+    let deleteProduct product basket =
+        match basket with
+        | EmptyBasket -> failwith "aie"
+        | FilledBasket filledBasket ->
+            let items = filledBasket.Items |> List.filter (fun x -> x.Product <> product)
+            Basket.create items
     
-    let changeProductQuantity quantity product (FilledBasket basket) =
-        let newItem = { Product=product; Quantity=quantity }
-        let items = excludeProduct product basket.Items
-        let newItems = items @ [newItem]
-        Basket.create newItems
+    let changeProductQuantity quantity product basket =
+        match basket with
+        | EmptyBasket -> failwith "aie"
+        | FilledBasket filledBasket ->
+            let newItem = { Product=product; Quantity=quantity; Total }
+            let items = excludeProduct product filledBasket.Items
+            let newItems = items @ [newItem]
+            Basket.create newItems

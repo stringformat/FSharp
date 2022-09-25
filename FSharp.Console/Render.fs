@@ -6,6 +6,8 @@ open FSharp.Business.Models.Common
 open FSharp.Business.Models.Product
 open FSharp.Business.Models.Basket
 
+Console.OutputEncoding <- System.Text.Encoding.Unicode
+
 let renderMenu =
     printfn "Bienvenue"
     printfn "----------------------------------"
@@ -20,6 +22,7 @@ let renderShowCatalog (products:Product list) =
     printfn ""
     printfn "------------------- Catalogue ----------------------"
     printfn "ID -- Nom -- Description -- Prix"
+    printfn "----------------------------------------------------"
     
     for product in products do
          let description =
@@ -29,11 +32,11 @@ let renderShowCatalog (products:Product list) =
              
          let price =
              match product.Price with
-             | Free -> "gratuit"
+             | Free -> "Gratuit"
              | StandardPrice standardPrice -> Amount.toString standardPrice
              | PromotedPrice promotedPrice ->
                  match promotedPrice with
-                 | Promoted promoted -> $"PROMO !! %s{Amount.toString promoted}"
+                 | Promoted promoted -> $"PROMO !! Nouveau prix: %s{Amount.toString promoted}"
                  | PercentageOff(price, percentageOff) -> $"PROMO !! %s{Amount.toString price} (%s{Percentage.toString percentageOff} de réduction)"
          
          printfn $"%s{Id1To99.toString product.Id} -- %s{String10.value product.Name} -- %s{description} -- %s{price}"
@@ -66,7 +69,11 @@ let renderAddProductToBasket products basket =
          | Some quantity -> quantity 
          | None -> failwith "Quantité incorrect"
          
-     ManageBasket.addProductToBasket product quantity basket
+     let filledBasket = ManageBasket.addProductToBasket product quantity basket
+    
+     printfn "Produit ajouté !"
+     
+     filledBasket
  
 let renderShowBasket (basket:Basket) =
     printfn ""
@@ -76,11 +83,25 @@ let renderShowBasket (basket:Basket) =
         | FilledBasket filledBasket ->
             printfn "ID -- Nom -- Quantité -- Prix -- Total"
             for item in filledBasket.Items do
-                printfn $"%s{string item.Product.Id} -- %s{string item.Product.Name} -- %s{string item.Quantity}"
+                let price =
+                     match item.Product.Price with
+                     | Free -> "Gratuit"
+                     | StandardPrice standardPrice -> Amount.toString standardPrice
+                     | PromotedPrice promotedPrice ->
+                         match promotedPrice with
+                         | Promoted promoted -> $"PROMO !! Nouveau prix: %s{Amount.toString promoted}"
+                         | PercentageOff(price, percentageOff) -> $"PROMO !! %s{Amount.toString price} (%s{Percentage.toString percentageOff} de réduction)"
+                     
+                printfn $"%s{Id1To99.toString item.Product.Id} -- %s{String10.value item.Product.Name} -- %s{Quantity1To99.toString item.Quantity} -- %s{price} -- %s{Amount.toString item.Total}"
         | EmptyBasket -> printfn "Panier vide."
         
+    let totalBasket =
+        match basket with
+        | FilledBasket filledBasket -> filledBasket.Total
+        | EmptyBasket -> Amount.def
+        
     printfn "----------------------------------------------------"
-    printfn "Total panier: {}"
+    printfn $"Total panier: %s{Amount.toString totalBasket}"
     printfn "----------------------------------------------------"
     
 let renderValidateBasketAndCreateOrder basket =

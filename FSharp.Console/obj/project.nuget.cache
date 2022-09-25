@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+xz8gNJfhaRZ5vPiP26QTdq85kBV5oHBcLVW04Q9yWVi9ygAAGWcFi/bZ8El6X6hljKaHyZIcwXvz44ada2Fmw==",
+  "dgSpecHash": "NbCZxfO9rc7rZufRO0s3kVDzsf48Pyp/n0g+LGOyUMncikeXmtt5TAQ6eTbhgrAoSgXgEZb/TSpLLFHQAXFu0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\alexi\\sources\\Github\\FSharp\\FSharp.Console\\FSharp.Console.fsproj",
   "expectedPackageFiles": [
-    "C:\\Users\\alexi\\.nuget\\packages\\fsharp.core\\6.0.2\\fsharp.core.6.0.2.nupkg.sha512"
+    "C:\\Users\\alexi\\.nuget\\packages\\fsharp.core\\6.0.6\\fsharp.core.6.0.6.nupkg.sha512"
   ],
   "logs": []
 }

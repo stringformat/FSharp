@@ -8,3 +8,4 @@ C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domai
 C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.dll
 C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.xml
 C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.pdb
+C:\Users\alexi\sources\Github\FSharp\FSharp.Domain\obj\Debug\net6.0\FSharp.Domain.fsproj.CoreCompileInputs.cache

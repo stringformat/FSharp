@@ -27,19 +27,31 @@ type OrderState =
     | ClosedOrder of Order
 
 module Order =
-    let create (FilledBasket basket) firstName lastName email address =
-        let items = basket.Items |> List.map (fun x -> { Product=x.Product; Quantity=x.Quantity })
-        NewOrder
-            {
-                FirstName=firstName
-                LastName=lastName
-                Email=email
-                Address=address
-                Items=items
-            }
+    let create basket firstName lastName email address =
+        match basket with
+        | EmptyBasket -> failwith "aie"
+        | FilledBasket filledBasket ->
+            let items = filledBasket.Items |> List.map (fun x -> { Product=x.Product; Quantity=x.Quantity })
+            NewOrder
+                {
+                    FirstName=firstName
+                    LastName=lastName
+                    Email=email
+                    Address=address
+                    Items=items
+                } 
     
-    let prepare (NewOrder order) = PreparedOrder order
+    let prepare order =
+        match order with
+        | EmptyOrder | ClosedOrder _ | SentOrder _ | PreparedOrder _ -> failwith "aie"
+        | NewOrder newOrder -> PreparedOrder newOrder
+        
+    let send order =
+        match order with
+        | EmptyOrder | ClosedOrder _ | SentOrder _ | NewOrder _ -> failwith "aie"
+        | PreparedOrder preparedOrder -> SentOrder preparedOrder
     
-    let send (PreparedOrder order) = SentOrder order
-    
-    let close (SentOrder order) = ClosedOrder order
+    let close order =
+        match order with
+        | EmptyOrder | ClosedOrder _ | PreparedOrder _ | NewOrder _ -> failwith "aie"
+        | SentOrder sentOrder -> ClosedOrder sentOrder
